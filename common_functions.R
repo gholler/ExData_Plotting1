@@ -48,7 +48,7 @@ do_plot <- function (hpc, png_file, plotting_function) {
     Sys.setlocale(category = "LC_TIME",locale = "En_US.UTF-8")
     
     #open the png device and switch to it
-    png(png_file)
+    png(png_file, width=480, height = 480)
     
     plotting_function(hpc)
     
